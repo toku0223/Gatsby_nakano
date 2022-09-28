@@ -1,0 +1,21 @@
+
+
+.message {
+  color:red;
+}
+
+.header {
+  background-color: blueviolet;
+  margin: auto;
+  width: 100vw;
+  height: 60px;
+}
+
+.head-text {
+  display:flex;
+  margin: auto;
+  width: 60%;
+  height: 60px;
+  align-content:center;
+}
+
