@@ -66,19 +66,40 @@ const moreLinks = [
 
 const utmParameters = `?utm_source=starter&utm_medium=start-page&utm_campaign=default-starter`
 
+const RANDOM_IMG = "https://source.unsplash.com/collection/175083/640x360";
+
 const IndexPage = () => (
   <>
     <div className="header">
-      <h2 className="head-text">ProAca Web site</h2>
+      <h1 className="head-text">ProAca Web site</h1>
     </div>
-    <h1>
-      Welcome to my Site!<br />
-      Enjoy Everything!
-    </h1>
-    <p>
-      Written by SatYus.<br />
-      Front Engineer at ProAca.Inc, Love JavaScript
-    </p>
+    <div className="body-all">
+      <h1>
+        Welcome to my Site!<br />
+        Enjoy Everything!
+      </h1>
+      <p className="body-p">
+        Written by SatYus.<br />
+        Front Engineer at ProAca.Inc, Love JavaScript
+      </p>
+      <div className="flex">
+        <img className="img-shadow" src={RANDOM_IMG} alt="" width="480" height="270" />
+        <div className="flex-column">
+          <h2>Hello World!！ I'm　ゆうじろう！</h2>
+          <p>ゆうじろう　フロントエンジニア　developper</p>
+          <p>2021年７月21日</p>
+        </div>
+      </div>
+      <div className="flex">
+        <img className="img-shadow" src={RANDOM_IMG} alt="" width="480" height="270" />
+        <div className="flex-column">
+          <h2>決済機能実装しました</h2>
+          <p>gatsby stripeで決済機能を実装しました。</p>
+          <p>2021年７月23日</p>
+        </div>
+      </div>
+    </div>
+    <p className="copy-right">&copy;2021 ProAca</p>
   </>
 )
 
