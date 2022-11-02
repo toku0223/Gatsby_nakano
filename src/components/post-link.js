@@ -1,20 +1,28 @@
-// src/components/post-link.js
-import React from "react";
-import "../styles/style.css";
+import { Link } from 'gatsby';
+import React from 'react';
+import '../styles/style.css';
 
-const RANDOM_IMG = "https://source.unsplash.com/collection/175083/640x360";
+export default function PostLink({ post }) {
+  const { title, updatedAt, image } = post;
+  const description = post.description.description;
+  const pageLink = `/post/${post.slug}/`;
 
-export default function PostLink() {
   return (
-    <div className="post-link">
-      <img src={RANDOM_IMG} className="post-link-image" alt="post-cover"></img>
-      <div className="post-link-text">
-
-        <h2>Gatsbyでブログを作成してみた</h2>
-        <p className="post-link-body">先日、爆速なサイトを作れると噂のReact製フレームワーク
-          のGatsbyを学んでみました。</p>
-        <p className="post-link-date">2020年5月30日</p>
+    <Link to={pageLink} className="post-link-anchor">
+      <div className="post-link">
+        <div>
+          <img
+            src={image.file.url}
+            className="post-link-image"
+            alt="post-cover"
+          ></img>
+        </div>
+        <div className="post-link-text">
+          <h2>{title}</h2>
+          <p className="post-link-body">{description}</p>
+          <p className="post-link-date">{updatedAt}</p>
+        </div>
       </div>
-    </div >
-  )
+    </Link>
+  );
 }

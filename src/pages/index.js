@@ -33,9 +33,9 @@ export default function Home() {
   return (
     <Layout>
       <Hero />
-      <PostLink />
-      <PostLink />
-      <PostLink />
+      {query.allContentfulPost.edges.reverse().map((edge) => (
+        <PostLink key={edge.node.slug} post={edge.node} />
+      ))}
     </Layout>
   )
 }
