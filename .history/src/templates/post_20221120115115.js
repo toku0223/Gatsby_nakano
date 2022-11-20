@@ -4,7 +4,7 @@ import Layout from "../components/layout";
 import Seo from '../components/seo';
 import "../styles/style.css";
 
-<Seo title="Dev Blog" description="Gatsbyを使って作ったブログです" />
+<Seo title={title} description={description} />
 
 
 export default function Post({ pageContext }) {

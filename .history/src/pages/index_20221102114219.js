@@ -4,9 +4,6 @@ import React from "react";
 import Hero from "../components/hero";
 import Layout from "../components/layout";
 import PostLink from "../components/post-link";
-import Seo from '../components/seo';
-
-<Seo title="Dev Blog" description="Gatsbyを使って作ったブログです" />
 
 export default function Home() {
   const query = useStaticQuery(

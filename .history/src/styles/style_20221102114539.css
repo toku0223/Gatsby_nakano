@@ -138,16 +138,3 @@ body {
   color: #595959;
   text-align: center;
 }
-
-/* src/styles/404.css */
-.not-found-message {
-  margin: 40px auto;
-  text-align: center;
-}
-
-.not-found-image {
-  width: 100%;
-  height: auto;
-  margin: 40px auto;
-  box-shadow: rgba(0, 0, 0, 0.2) 0px 20px 40px;
-}

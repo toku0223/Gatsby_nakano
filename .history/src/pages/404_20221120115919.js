@@ -1,8 +1,8 @@
 import { Link } from "gatsby"
 import React from "react"
+import NOT_FOUND_IMG from "../../static/404.jpg"
 import Layout from "../components/layout"
 import Seo from "../components/seo"
-import NOT_FOUND_IMG from "../images/404.jpg"
 import "../styles/style.css"
 
 export default function NotFound() {
